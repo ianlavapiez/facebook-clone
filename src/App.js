@@ -5,18 +5,20 @@ import { GlobalStyle } from './global.styles';
 
 import Header from './components/header/header.component';
 
-import HomePage from './pages/home.page';
+import HomePage from './pages/home/home.page';
+import PostFormPage from './pages/post-form/post-form.page';
 
-function App() {
+const App = () => {
   return (
     <Fragment>
       <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
+        <Route exact path='/post-form' component={PostFormPage} />
       </Switch>
     </Fragment>
   );
-}
+};
 
 export default App;

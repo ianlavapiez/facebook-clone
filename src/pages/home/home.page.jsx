@@ -3,8 +3,8 @@ import { Grid, Typography } from '@material-ui/core';
 
 import { useStyles } from './home.styles';
 
-import PostContainer from '../components/home/post-container/post-container.component';
-import AddButton from '../components/home/add-button/add-button.component';
+import PostContainer from '../../components/home/post-container/post-container.component';
+import AddButton from '../../components/home/add-button/add-button.component';
 
 const HomePage = () => {
   const classes = useStyles();
